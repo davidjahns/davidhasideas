@@ -1,0 +1,28 @@
+$dj-avatar-size-sm: 40px;
+$dj-avatar-size-md: 60px;
+$dj-avatar-size-lg: 180px;
+$dj-avatar-border-radius: 100%;
+
+.dj-avatar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  
+  
+  //elements
+  &__image {
+    height: $dj-avatar-size-sm;
+    width: $dj-avatar-size-sm;
+    border-radius: $dj-avatar-border-radius;
+  }
+  &__text-wrapper {
+    padding-left: 10px;
+  }
+  &__text-primary,
+  &__text-secondary {
+    display: block;
+  }
+  
+}
+

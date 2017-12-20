@@ -1,0 +1,33 @@
+.dj-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  bottom: 0;
+  
+  //tablet and larger
+  @media (min-width: $screen-size-tablet) {
+    justify-content: center;
+  }
+  
+    
+  &__tab {
+    padding: 10px;
+    flex-grow: 1;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    
+    //tablet and larger
+    @media (min-width: $screen-size-tablet) {
+      flex-grow: initial;
+    }
+    
+    &:hover {
+      background: grey;
+    }
+    
+    &--active {
+      border-bottom: 3px solid blue;
+    }
+  }
+
+}

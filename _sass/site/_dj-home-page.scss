@@ -1,0 +1,37 @@
+$dj-home-page-shape-size: 180px;
+
+
+.dj-home-page__header {
+  display: flex;
+  align-items: center;
+}
+
+.dj-home-page__headline {
+  width: $dj-home-page-shape-size;
+  height: $dj-home-page-shape-size;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: right;
+  background: black;
+  color: white;
+  font-size: 20px;
+}
+
+//modifiers
+.dj-home-page__avatar {
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  .dj-avatar__image {
+    height: $dj-home-page-shape-size;
+    width: $dj-home-page-shape-size;
+  }
+}
+
+.dj-home-page__nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
