@@ -1,0 +1,55 @@
+$active-tab-color: blue;
+
+.dj-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: auto;
+  background-color: $white;
+  
+  //tablet and larger
+  @media (min-width: $screen-size-tablet) {
+    justify-content: center;
+  }
+  
+    
+  &__tab {
+    padding: 10px;
+    flex-grow: 1;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    
+    //tablet and larger
+    @media (min-width: $screen-size-tablet) {
+      flex-grow: initial;
+    }
+    
+    &:hover {
+      background: grey;
+    }
+    
+    &--active {
+      border-bottom: 3px solid $active-tab-color;
+    }
+  }
+  
+  
+  //modifier class for fixing tabs to bottom of screen
+  &--fixed-to-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    .dj-tabs__tab {
+      border-bottom: 0;
+      border-top: 3px solid transparent;
+      
+      &--active {
+        border-top: 3px solid $active-tab-color;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,21 @@
+$dj-site-header-bg: transparent; 
+
+.dj-site-header {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  background-color: $dj-site-header-bg;
+  // border: 1px solid black; 
+}
+
+
+.dj-page-headline {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 300px;
+}
+

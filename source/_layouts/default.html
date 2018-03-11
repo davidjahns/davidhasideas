@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="dj-u-body--has-fixed-header-and-footer">
+    
+    {% include app-bar.html %}
+    
+    {% include header.html %}
+
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

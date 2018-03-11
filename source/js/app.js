@@ -1,0 +1,20 @@
+///////////////////////////////////////////////////////////////////////////////
+//functions to be run on load/ready
+///////////////////////////////////////////////////////////////////////////////
+$( document ).ready(function() {
+  //functions here
+});
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+//function to check if screen is less than 1200px and run tasks
+///////////////////////////////////////////////////////////////////////////////
+var smallScreenTasks = function() {
+  if($(window).width() < 1200) {
+    $('body').removeClass('hca-layout--has-drawer');
+    $('.hca-layout__drawer').addClass('hca-layout__drawer--is-closed');
+    $('.hca-menu-toggle__icon').html('menu');
+    $('.hca-menu-toggle__text').html('Menu');
+  }
+}
